@@ -1,0 +1,40 @@
+package stepDefinitions;
+
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import pages.DialogContent;
+import utilities.ExcelUtility;
+
+import java.util.List;
+
+public class _10_ApachePOISteps {
+    DialogContent dialogContent = new DialogContent();
+
+    @When("^User create citizenship with ApcahePOI$")
+    public void userCreateCitizenshipWithApcahePOI() {
+        List<List<String>> liste=
+                ExcelUtility.getListData("src/main/resources/ApacheExcel12.xlsx","testCitizen",2);
+
+        for(int i=0;i<liste.size();i++)
+        {
+            dialogContent.findElementAndClickFunction("addButton");
+            dialogContent.findElementAndSendKeysFunction("nameInput", liste.get(i).get(0));
+            dialogContent.findElementAndSendKeysFunction("shortName", liste.get(i).get(1));
+            dialogContent.findElementAndClickFunction("saveButton");
+            dialogContent.findElementAndVerifyContainsText("message","successfully");
+        }
+    }
+
+    @Then("^User delete citizenship with ApachePOI$")
+    public void userDeleteCitizenshipWithApachePOI() {
+        List<List<String>> liste=
+                ExcelUtility.getListData("src/main/resources/ApacheExcel1.xlsx","testCitizen",1);
+
+        for(int i=0;i<liste.size();i++)
+        {
+            dialogContent.editAndDeleteFunction(liste.get(i).get(0), "delete");
+            dialogContent.findElementAndClickFunction("yesButton");
+        }
+
+    }
+}
