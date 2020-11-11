@@ -1,0 +1,8 @@
+JDBC nedir? (Java Database Connectivity)
+Veritabanlarini automation yapmama yardimci olur
+sorgularimi gonderiyorum, gelen sonuclarla, UI deki gozuken sonuclari karsilastiriyorum
+
+JDBC yi nasil kullanirsin?
+URL, username ve password vererek bir connection olustururm
+Bu connection uzerinde statement olsuturarak, sorgularimi calsitiririm
+Sonuclari ResultSet e atarak kullanirim.
