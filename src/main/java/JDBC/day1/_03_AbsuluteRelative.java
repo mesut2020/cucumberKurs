@@ -26,5 +26,6 @@ public class _03_AbsuluteRelative extends _Parent {
        rs.relative(-10); // negatif sayilarda geri gider. yani 25. satirda ise 15. satira gider.
        title = rs.getString("title");
        System.out.println(title);
+
    }
 }
