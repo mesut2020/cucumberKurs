@@ -5,7 +5,7 @@
 
 Feature: Login Functionality
 
-  @SmokeTest @RegressionTest
+  @SmokeTest
   Scenario: Login with valid username and password
 
     #    siteyi ac - basqaara git
