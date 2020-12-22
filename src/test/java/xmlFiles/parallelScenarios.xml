@@ -3,14 +3,14 @@
     <test name="test1 Chrome">
         <parameter name="browser" value="chrome"></parameter>
         <classes>
-            <class name= "runners._06_TestRunnerParalelCrossBrowser"></class>
+            <class name= "runners._06_TestRunnerParallelCrossBrowser"></class>
         </classes>
     </test>
 
     <test name="test2 FireFox">
         <parameter name="browser" value="firefox"></parameter>
         <classes>
-            <class name= "runners._06_TestRunnerParalelCrossBrowser"></class>
+            <class name= "runners._06_TestRunnerParallelCrossBrowser"></class>
         </classes>
     </test>
 

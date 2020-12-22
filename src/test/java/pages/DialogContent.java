@@ -113,6 +113,12 @@ public class DialogContent extends _Parent {
     @FindBy(xpath = "(//mat-option[@role='option'])[4]")
     private WebElement option4;
 
+    @FindAll({ @FindBy(xpath = "//mat-option[@role='option']")     })
+    private List<WebElement> optionsList;
+
+    @FindBy(xpath = "(//mat-select[@role='combobox'])[1]")
+    private WebElement countryName;
+
 
     public void findElementAndClickFunction(String elementName) {
         /**
@@ -129,6 +135,15 @@ public class DialogContent extends _Parent {
             case "closeDialog": myElement = closeDialog; break;
             case "searchButton": myElement = searchButton; break;
             case "userTypeDropdown": myElement = userTypeDropdown; break;
+            case "countryName": myElement = countryName; break;
+
+            default:  // gelen elementName e gore optionsList deki elementi buluyor.
+                for (int i = optionsList.size()-1; i >=0 ; i--) {
+                    if(optionsList.get(i).getText().equalsIgnoreCase(elementName))
+                    {
+                        myElement=optionsList.get(i); break;
+                    }
+                }
         }
         clickFunction(myElement);
     }
@@ -143,6 +158,7 @@ public class DialogContent extends _Parent {
             case "searchNameInput": myElement = searchNameInput; break;
             case "integrationCode": myElement = integrationCode; break;
             case "priority": myElement = priority; break;
+
         }
         sendKeysFunction(myElement, value);
     }

@@ -1,6 +1,7 @@
 package stepDefinitions;
 
 import cucumber.api.PendingException;
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import pages.DialogContent;
@@ -15,6 +16,13 @@ public class _02_CountrySteps {
         leftNav.findElementAndClickFunction("setupOne");
         leftNav.findElementAndClickFunction("parameters");
         leftNav.findElementAndClickFunction("countries");
+    }
+
+    @And("^Navigate to city page$")
+    public void navigateToCityPage() {
+        leftNav.findElementAndClickFunction("setupOne");
+        leftNav.findElementAndClickFunction("parameters");
+        leftNav.findElementAndClickFunction("cities");
     }
 
     @When("^Create a country$")
@@ -38,5 +46,6 @@ public class _02_CountrySteps {
 //            dialogContent.findElementAndVerifyContainsText("message", "successfully");
 //        }
     }
+
 
 }

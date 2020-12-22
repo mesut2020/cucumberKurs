@@ -18,8 +18,8 @@ public class LeftNav extends _Parent {
     @FindBy(xpath = "//span[text()='Parameters']")
     private WebElement parameters;
 
-    @FindBy(xpath = "//span[text()='Countries']")
-    private WebElement countries;
+    @FindBy(xpath = "//span[text()='Countries']")     private WebElement countries;
+    @FindBy(xpath = "//span[text()='Cities']")     private WebElement cities;
 
     @FindBy(xpath = "//span[text()='Citizenships']")
     private WebElement citizenships;
@@ -62,6 +62,7 @@ public class LeftNav extends _Parent {
             case "setupOne" :  myElement=setupOne;break;
             case "parameters" :  myElement=parameters;break;
             case "countries" :  myElement=countries;break;
+            case "cities" :  myElement=cities;break;
             case "citizenships" :  myElement=citizenships;break;
             case "nationality" :  myElement=nationality;break;
             case "inventory" :  myElement=inventory;break;

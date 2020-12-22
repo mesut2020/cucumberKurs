@@ -15,11 +15,11 @@ import utilities.Driver;
         dryRun = false,
 
         plugin = { "com.cucumber.listener.ExtentCucumberFormatter:target/ExtentReport/ExtentReportParallelTestLogIn1.html"
-                // to generate a extend report we need this plugin
+                // to generate an extend report we need this plugin
         }
 )
 
-public class _06_TestRunnerParalelCrossBrowser extends AbstractTestNGCucumberTests {
+public class _06_TestRunnerParallelCrossBrowser extends AbstractTestNGCucumberTests {
 
     @BeforeClass
     @Parameters("browser")
