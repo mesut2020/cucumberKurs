@@ -5,7 +5,7 @@ Feature: HW: Student functionality
     When  Enter username and password and click Login button
     Then User should login successfully
 
-  @RegressionTest
+
   Scenario Outline: User add and delete a student
 
     When Click on the element in the left class
