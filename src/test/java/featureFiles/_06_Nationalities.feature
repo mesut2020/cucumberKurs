@@ -18,7 +18,7 @@ Feature: Nationalities functionality
     Then User delete the "Japonishi2"
     Then Success message should be displayed
 
-
+  @RegressionTest
   Scenario: Nationalities All functioanlity
     Then Create a Nationality name as "Japonishi"
     Then Success message should be displayed
