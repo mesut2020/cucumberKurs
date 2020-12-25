@@ -12,7 +12,7 @@ public class LeftNav extends _Parent {
         PageFactory.initElements(driver,this);
     }
 
-    @FindBy(xpath = "(//span[text()='Setup'])[1]")
+    @FindBy(xpath = "//span[text()='Setup']")
     private WebElement setupOne;
 
     @FindBy(xpath = "//span[text()='Parameters']")
