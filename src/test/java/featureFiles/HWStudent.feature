@@ -21,7 +21,6 @@ Feature: HW: Student functionality
 #      | birthDate | <birthdate> |
       | studentID | <studentid> |
 
-
     And Click on the element in the form class
       | gender                   |
       | <genderOption>           |
@@ -80,9 +79,7 @@ Feature: HW: Student functionality
 
     Then Success message should be displayed
 
-
     Examples:
       | firstname | lastname | birthdate  | studentid | mobilephone | email            | previousSchool      | representativeFirstName | representativeLastName | representativeMobilePhone | genderOption | gradeLevelOption | schoolDepartmentOption | sectionOption | citizinshipOption | nationalityOption | representativeOptions | countryOptions | cityOptions | studentDocumentType |studentDocumentNumber|
       | Erol      | Tas      | 08/08/2006 | 20202006  | 1234567898  | abcd@yahoo.com   | Selcuklu Orta Okulu | Ahmet                   | Baba                   | 1234567899                | option1      | option4          | option2                | option2       | option1           | option2           | option1               | option4        | option2     | option2             | 12345               |
       | Jale      | Polat    | 08/08/2008 | 20202008  | 1234567899  | efgh@hotmail.com | Karatay Orta Okulu  | Ayse                    | Ana                    | 1122334455                | option2      | option2          | option1                | option1       | option2           | option4           | option2               | option1        | option2     | option3             | 67890               |
-

@@ -20,9 +20,9 @@ Feature: Nationalities functionality
 
   @RegressionTest
   Scenario: Nationalities All functioanlity
-    Then Create a Nationality name as "Japonishi"
+    Then Create a Nationality name as "Japon122"
     Then Success message should be displayed
-    Then User edit the "Japonishi" to "Japonishi2"
+    Then User edit the "Japon122" to "Japon1222"
     Then Success message should be displayed
-    Then User delete the "Japonishi2"
+    Then User delete the "Japon1222"
     Then Success message should be displayed

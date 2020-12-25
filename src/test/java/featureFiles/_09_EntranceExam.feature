@@ -16,7 +16,7 @@ Feature: Entrance Exam functionality
       | addButton |
 
     When User sends the keys in the form content class
-      | nameInput | ICT17 |
+      | nameInput | ICT177 |
 
     And Click on the element in the form content class
       | academicPeriod |
@@ -32,6 +32,6 @@ Feature: Entrance Exam functionality
 
     Given Navigate to back page
 
-    Then User delete the "ICT17"
+    Then User delete the "ICT177"
 
     Then Success message should be displayed
